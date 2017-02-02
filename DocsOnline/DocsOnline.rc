@@ -1,0 +1,196 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_MAINTB              BITMAP                  "res\\id_maintb.bmp"
+IDB_STATI               BITMAP                  "res\\id_stati.bmp"
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_DOCSONLINE          ICON                    "DocsOnline.ico"
+IDI_SMALL               ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_DOCSONLINE MENU
+BEGIN
+    MENUITEM "Settings...",                 ID_SETTINGS
+END
+
+IDR_APP_POPUP_MENU MENU
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "&Settings...",                ID_SETTINGS
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_DOCSONLINE ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SETTINGS DIALOGEX 0, 0, 289, 238
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Settings"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "&Email address",IDC_STATIC,7,10,44,8
+    EDITTEXT        IDC_USERNAME,55,7,84,14,ES_AUTOHSCROLL
+    LTEXT           "Pass&word",IDC_STATIC,7,28,32,8
+    EDITTEXT        IDC_PASSWORD,55,25,84,14,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "Google Apps &Premier account",IDC_PREMIER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,47,109,10
+    CONTROL         "Mirror structure of the following folders/drives during upload:",IDC_MIRRORFOLDERS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,71,211,10
+    PUSHBUTTON      "&Add...",IDC_ADDFOLDER,221,69,29,14
+    PUSHBUTTON      "&Delete",IDC_DELETEFOLDER,253,69,29,14
+    CONTROL         "",IDC_FOLDERS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,7,87,275,43
+    LTEXT           "When uploading documents from pathes outside the mirror folder list:",IDC_STATIC,7,145,222,8
+    CONTROL         "Recreate folder structure in Google Docs",IDC_RECREATESTRUCT,
+                    "Button",BS_AUTORADIOBUTTON,7,158,146,10
+    CONTROL         "Upload all documents to the root Google Docs folder",IDC_ROOTUPLOAD,
+                    "Button",BS_AUTORADIOBUTTON,7,171,182,10
+    CONTROL         "&Start program on Windows startup",IDC_AUTOSTART,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,198,127,10
+    DEFPUSHBUTTON   "OK",IDOK,85,217,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,154,217,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,137,275,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,62,275,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,188,275,1
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "DocsOnline"
+    IDC_DOCSONLINE          "DOCSONLINE"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
